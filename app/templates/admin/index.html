@@ -1,0 +1,28 @@
+{% extends "admin/admin.html" %}
+
+{% block css %}
+<style>
+   h2{
+      text-align:center;
+   }
+</style>
+{% endblock %}
+
+{% block content%}
+<section class="content-header">
+    <h1>微电影管理系统</h1>
+    <ul class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> 首页</a></li>
+    </ul>
+</section>
+<h2>欢迎来到管理员后台！</h2>
+{% endblock %}
+
+{% block js %}
+<script>
+    $(document).ready(function(){
+        $('#g-1').addClass('active');
+        $('#g-1-1').addClass('active');
+    });
+</script>
+{% endblock %}
